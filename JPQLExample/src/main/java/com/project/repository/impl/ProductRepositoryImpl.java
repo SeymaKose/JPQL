@@ -47,9 +47,6 @@ public class ProductRepositoryImpl implements ProductRepository{
 	}
 	
 	public List<Product> findProducts() {
-
-//		Query query = this.entityManager.createQuery(ProductQueries.findProducts);
-//		List<Product> products = query.getResultList();
 		
 		TypedQuery<Product> typedQuery = this.entityManager.createQuery(ProductQueries.findProducts, Product.class);
 		List<Product> products = typedQuery.getResultList();
