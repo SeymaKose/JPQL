@@ -15,7 +15,7 @@ public class Test {
 	
 	public static void main(String[] args) {
 		
-		insertData(); //for adding data to your database
+		insertData(); //for adding data to the database
 		
 		List<Object[]> products = productRepository.findProductNameAndPrice();
 		for (Object[] objects : products) {
