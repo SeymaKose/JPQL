@@ -15,14 +15,7 @@ public class Test {
 	
 	public static void main(String[] args) {
 		
-		//insertData();
-		
-        /*
-        List<Product> products = productRepository.findProducts();
-		for (Product product : products) {
-			System.out.println(product);
-		}
-		*/
+		insertData(); //for adding data to your database
 		
 		List<Object[]> products = productRepository.findProductNameAndPrice();
 		for (Object[] objects : products) {
